@@ -21,8 +21,8 @@ function App() {
   return (
     <>
       <h1>{valor}</h1>
-      <button onClick={sumaUn}> + {sumas}</button>
-      <button onClick={restaUn}> - {restas}</button>
+      <button onClick={sumaUn}> + {"("+sumas+")"}</button>
+      <button onClick={restaUn}> - {"("+restas+")"}</button>
       <button onClick={reset}>Reset</button>
     </>
   );

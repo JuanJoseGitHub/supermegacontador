@@ -36,7 +36,7 @@ function App() {
     <>
       <div className="App">
         <h1>{valor}</h1>
-
+       
         <Boton texto="+" op={sumaUn}/>
         <Boton texto="-" op={restaUn}/>
         <Boton texto="Auto" op={ManexaAuto}/>

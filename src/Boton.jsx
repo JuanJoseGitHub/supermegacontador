@@ -1,4 +1,5 @@
 import React from 'react'
+import style from './boton.module.css'
 import { useState } from 'react'
 
 
@@ -13,7 +14,7 @@ function Boton({texto,op} ) {
     
   return (
     <>
-        <button onClick={ManexaBoton}>{texto} ({clicks})</button>
+        <button className="B" onClick={ManexaBoton}>{texto} ({clicks})</button>
     </>
   )
 }

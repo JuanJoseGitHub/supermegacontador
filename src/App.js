@@ -1,22 +1,36 @@
 import "./App.css";
 import Boton from "./Boton";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function App() {
   
   let [valor, setValor] = useState(0);
+  let [auto,setAuto] = useState(false)
   
   function sumaUn() {
-    setValor(++valor);
+    setValor(++valor)
   }
 
   function restaUn() {
-    setValor(--valor);
+    setValor(--valor)
   }
   
   function reset() {
-    setValor(0);
+    setValor(0)
   }
+
+  function ManexaAuto() {
+    setAuto(!auto)
+  }
+
+  useEffect(
+    () => {
+            let codTemp
+            if (auto) {codTemp=setTimeout(sumaUn,1000)}
+            return () => {clearTimeout (codTemp)}
+   },
+    [auto,valor]
+  )
 
   return (
     <>
@@ -25,6 +39,7 @@ function App() {
 
         <Boton texto="+" op={sumaUn}/>
         <Boton texto="-" op={restaUn}/>
+        <Boton texto="Auto" op={ManexaAuto}/>
         <Boton texto="Reset" op={reset}/>
 
       </div>

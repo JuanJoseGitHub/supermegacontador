@@ -14,7 +14,8 @@ function Boton({texto,op} ) {
     
   return (
     <>
-        <button className="B" onClick={ManexaBoton}>{texto} ({clicks})</button>
+      
+        <button className="B" onClick={ManexaBoton}>{texto} <span class="badge badge-light">{clicks}</span></button>
     </>
   )
 }

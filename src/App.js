@@ -43,6 +43,7 @@ function App() {
         <Boton texto="Reset" op={reset}/>
 
       </div>
+      
     </>
   );
 }

@@ -8,11 +8,11 @@ function App() {
   let [auto,setAuto] = useState(false)
   
   function sumaUn() {
-    setValor(++valor)
+    setValor(valor+1)
   }
 
   function restaUn() {
-    setValor(--valor)
+    setValor(valor-1)
   }
   
   function reset() {

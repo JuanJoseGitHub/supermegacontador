@@ -4,6 +4,7 @@
 h1 {
   font-size: 18em;
   color: blue;
+  padding: 80px;
 }
 body {background-image: url(../public/portal2.jpg);
   background-repeat: no-repeat;
